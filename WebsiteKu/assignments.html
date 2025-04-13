@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments - Yosia Sitompul</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(31, 132, 255, 0.708);
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #a3c9f1;
+      width: 100%;
+      padding: 20px;
+      text-align: left;
+      box-sizing: border-box;
+    }
+
+    /* Animasi garis bawah pada setiap tautan navigasi */
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 24px;
+      font-family: inherit;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Garis bawah yang muncul saat hover */
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: blue;
+      transition: width 0.3s ease;
+    }
+
+    /* Ketika di hover, garis bawah memanjang */
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Mengubah warna teks saat hover */
+    nav a:hover {
+      color: blue;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 50px;
+      text-align: center;
+      font-family: 'Times New Roman';
+    }
+
+    .content {
+      margin: 10px 0;
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 80%;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content-container p {
+      margin: 5px 0;
+    }
+
+    /* Untuk Menampilkan Tautan Pembuka PDF */
+    .open-pdf-link {
+      margin-top: 20px;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    .open-pdf-link:hover {
+      text-decoration: underline;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- KONTEN UTAMA -->
+  <div class="content-container">
+    <div class="content">
+      <div class="section-title">Tugas Saya</div>
+
+      <!-- Tautan Pembuka PDF -->
+      <a href="UTS_SISMUL_YOSIA.pdf" class="open-pdf-link" target="_blank">UTS</a>
+    </div>
+  </div>
+
+</body>
+</html>

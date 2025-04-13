@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Yosia Sitompul</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(31, 132, 255, 0.708); /* Warna biru transparan */
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #a3c9f1;
+      width: 100%;
+      padding: 20px;
+      text-align: left;
+      box-sizing: border-box;
+    }
+
+   /* Animasi garis bawah pada setiap tautan navigasi */
+   nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 24px;
+      font-family: inherit;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Garis bawah yang muncul saat hover */
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: blue;
+      transition: width 0.3s ease;
+    }
+
+    /* Ketika di hover, garis bawah memanjang */
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: blue;
+    }
+
+    /* Konten Utama */
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 50px; /* Memberikan sedikit jarak dari atas */
+      text-align: center;
+      font-family: 'Times New Roman';
+    }
+
+    .content {
+      margin: 10px 0;
+      font-size: 22px;
+      line-height: 1.6;
+      max-width: 80%;
+    }
+
+    .content img {
+      width: 350px;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 30px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subsection-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: black; /* Warna hitam untuk subjudul */
+      margin-top: 20px;
+      text-align: center; /* Agar subjudul lebih rapi */
+      width: 80%; /* Menyelaraskan dengan konten */
+      margin-left: 10%; /* Posisikan subjudul ke kiri */
+    }
+
+    /* Untuk memastikan teks di tengah secara vertikal */
+    .content-container p {
+      margin: 5px 0; /* Mengurangi jarak antar paragraf */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- KONTEN UTAMA -->
+  <div class="content-container">
+    <!-- Judul -->
+    <div class="content">
+      <div class="section-title">Sekilas Tentang Saya</div>
+      <p>Saya adalah seorang mahasiswa dari Universitas Riau.</p>
+      <p>Di Universitas Riau, saya mengambil prodi S1 Teknik Informatika.</p>
+      <p>Beragama Kristen dan berjenis kelamin laki-laki.</p>
+      <img src="UNRI.jpg" alt="Foto Gerbang Subbrantas Universitas Riau">
+    </div>
+
+    <!-- Hobi -->
+    <div class="content">
+      <div class="section-title">Hobi</div>
+      <p>Hobi saya adalah bermain game, futsal,</p>
+      <p>serta mendengarkan musik dan bernyanyi.</p>
+
+      <!-- Subjudul Game Favorit -->
+      <div class="subsection-title">Game favorit :</div>
+      <p>Mobile Legends: Bang Bang (MLBB)</p>
+      <img src="MLBB.jpg" alt="Logo Mobile Legends">
+      <p>Genshin Impact</p>
+      <img src="GENSHIN.jpg" alt="Logo Genshin Impact">
+
+      <!-- Subjudul Penyanyi Favorit -->
+      <div class="subsection-title">Penyanyi favorit :</div>
+      <p>Bruno Mars</p>
+      <img src="Bruno mars.jpg" alt="Bruno Mars">
+      <p>Justin Bieber</p>
+      <img src="JB(crop).jpg" alt="Justin Bieber">
+      <p>Dan masih banyak lagi</p>
+    </div>
+  </div>
+
+</body>
+</html>
